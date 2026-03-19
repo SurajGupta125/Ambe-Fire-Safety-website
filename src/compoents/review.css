@@ -1,0 +1,86 @@
+.review {
+  background: linear-gradient(180deg, #0a1b2e, #0e2744);
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.review-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.review h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.review h2 span {
+  color: #fcbf49;
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review-card {
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 140, 255, 0.1);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.1);
+}
+
+.stars {
+  color: #fcbf49;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 17px;
+  color: #c0d3e6;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.review-card h4 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.review-card span {
+  font-size: 16px;
+  color: #fcbf49;
+}
+
+
+@media (max-width: 900px) {
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .review h2 {
+    font-size: 28px;
+  }
+}
+
+.review-card {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.5s ease;
+}
+
+.review-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}

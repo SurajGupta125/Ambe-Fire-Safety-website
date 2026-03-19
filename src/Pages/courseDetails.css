@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.course-page {
+    background: linear-gradient(180deg, #0a1b2e, #0e2744);
+    min-height: 100vh;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.course-Name {
+    background: linear-gradient(180deg, #081b2e, #0c2948);
+    padding: 4rem 6rem;
+}
+
+.course-detail {
+    color: #38bdf8;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.course-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e2e8f0;
+    margin-top: 10px;
+}
+
+/* MAIN CONTENT */
+.course-container {
+    padding: 3rem 1rem;
+}
+
+.course-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 2;
+}
+
+.left h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #facc15;
+}
+
+.left h3 {
+    margin-top: 25px;
+    color: #f97316;
+}
+
+.left p {
+    color: #c1c1c1;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* LIST STYLE */
+.left ul {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.left ul li {
+    margin-bottom: 10px;
+    color: #c1c1c1;
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.left ul li svg{
+    color: #eab308;
+   font-weight: 700;
+}
+
+.left ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    color: #facc15;
+    font-size: 12px;
+}
+
+/* RIGHT CARD */
+.right {
+    flex: 1;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155;
+}
+
+.right h3 {
+    margin-bottom: 15px;
+    color: #facc15;
+}
+
+.right p {
+    margin-bottom: 12px;
+    color: #c1c1c1;
+}
+
+.right  svg{
+    color: #eab308;
+    font-weight:700;
+    font-size: 17px;
+}
+
+/* BUTTONS */
+.enroll {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #f97316;
+    border: none;
+    color: #c1c1c1;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enroll:hover {
+    background: #ea580c;
+}
+
+.download {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #facc15;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.download:hover {
+    background: #eab308;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .course-Name {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .course-title {
+        font-size: 2rem;
+    }
+
+    .course-content {
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+    }
+}

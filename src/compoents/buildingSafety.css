@@ -1,0 +1,181 @@
+.building-safety {
+  background: linear-gradient(180deg, #0a1b2e, #0e2744);
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.bs-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+
+.bs-left {
+  flex: 1;
+}
+
+.bs-subtitle {
+  color: #9db2c7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.bs-left h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.bs-left h1 span {
+  color: #fcbf49;
+}
+
+.bs-desc {
+  margin: 20px 0;
+  color: #aabed1;
+  line-height: 1.6;
+}
+
+
+.bs-cards {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.bs-card {
+  padding: 15px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  border: 0.5px solid #888;
+  flex: 1;
+}
+
+.bs-card i {
+  color: #fcbf49;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+
+.bs-btn {
+  background: #ff4d4d;
+  border: none;
+  padding: 12px 25px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bs-btn:hover {
+  background: #e63946;
+}
+.bs-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.bs-right img {
+  width: 100%;
+  border-radius: 10px;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.big-img {
+  grid-column: span 2;
+}
+
+.img2 {
+  position: "relative";
+  bottom: "30px"
+}
+
+@media (max-width: 900px) {
+  .bs-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bs-left h1 {
+    font-size: 32px;
+  }
+
+  .img2 {
+  position: "relative";
+}
+
+  .bs-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .bs-card {
+    flex: 1 1 45%;
+  }
+
+  .bs-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .building-safety {
+    padding: 40px 15px;
+  }
+
+  .bs-left h1 {
+    font-size: 26px;
+  }
+
+  .bs-desc {
+    font-size: 17px;
+  }
+
+  .bs-cards {
+    flex-direction: column;
+  }
+
+  .bs-card {
+    width: 100%;
+  }
+
+  .bs-right {
+    grid-template-columns: 1fr;
+  }
+
+  .big-img {
+    grid-column: span 1;
+  }
+
+  .bs-right img {
+    height: 200px;
+  }
+
+  .bs-btn {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bs-left h1 {
+    font-size: 48px;
+  }
+
+  .bs-desc {
+    font-size: 18px;
+  }
+}
