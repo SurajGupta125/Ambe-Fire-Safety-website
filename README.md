@@ -19,7 +19,7 @@ A modern and responsive Fire & Safety Institute website built using React.js.
 (Add screenshots here later)
 
 ##  Live Demo
-(https://agent-69bbe3a34accc7dda0--hilarious-mochi-86010f.netlify.app/)
+( https://agent-69bcdd9c110d99b0db--hilarious-mochi-86010f.netlify.app/ )
 
 ##  GitHub Repo
 (Ambe-Fire-Safety-website)
